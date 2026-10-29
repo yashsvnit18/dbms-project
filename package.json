@@ -1,0 +1,25 @@
+{
+  "name": "svnit-hostel-management-system",
+  "version": "1.0.0",
+  "description": "SVNIT Surat AI203 DBMS Course Project - Basic Hostel Management System",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "check": "node --check backend/server.js && node --check backend/auth.js && node --check backend/routes/api.js && node --check frontend/js/app.js"
+  },
+  "keywords": [
+    "dbms",
+    "mysql",
+    "express",
+    "svnit-surat"
+  ],
+  "author": "SVNIT Surat B.Tech AI",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
+

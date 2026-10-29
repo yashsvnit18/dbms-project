@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hostel Desk | SVNIT Surat</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body>
+  <main id="login-view" class="login-layout">
+    <section class="login-story">
+      <a class="wordmark" href="/">SVNIT <span>·</span> RESIDENCE</a>
+      <div class="story-copy">
+        <p class="eyebrow">AI203 · HOSTEL MANAGEMENT</p>
+        <h1>A better-run<br>hostel starts here.</h1>
+        <p>One clear place for room records, residents, payments and the everyday work of campus life.</p>
+      </div>
+      <p class="story-footer">SURAT, GUJARAT <span>·</span> 2026</p>
+    </section>
+    <section class="login-side">
+      <form id="login-form" class="login-form">
+        <div class="mark-small">H<span>D</span></div>
+        <p class="eyebrow">RESIDENTIAL SERVICES</p>
+        <h2>Sign in</h2>
+        <p class="muted">Use your hostel account to continue.</p>
+        <label>Username<input name="username" autocomplete="username" required placeholder="e.g. admin"></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="Enter password"></label>
+        <button class="button primary wide" type="submit">Continue <span aria-hidden="true">→</span></button>
+        <p id="login-message" class="message" aria-live="polite"></p>
+        <p class="demo-note"><strong>Demo accounts</strong><br>admin / admin123<br>u24ai001 / student123</p>
+      </form>
+    </section>
+  </main>
+
+  <div id="app-view" class="app-layout" hidden>
+    <aside class="sidebar">
+      <a class="side-brand" href="#home"><span class="brand-mark">H</span><span>Hostel Desk<small>SVNIT SURAT</small></span></a>
+      <p class="nav-caption">WORKSPACE</p>
+      <nav id="navigation" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom">
+        <div class="user-chip"><div class="avatar" id="avatar">A</div><div><strong id="user-name">Administrator</strong><small id="user-role">ADMIN</small></div></div>
+        <button id="logout-button" class="logout-button" type="button" title="Sign out" aria-label="Sign out">↗</button>
+      </div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div><p id="section-kicker" class="eyebrow">HOSTEL OPERATIONS</p><h1 id="section-title">Overview</h1></div><div class="topbar-date" id="today-label"></div></header>
+      <div id="notice" class="notice" role="status" aria-live="polite"></div>
+      <section id="content" class="content-area"></section>
+      <footer class="page-footer">AI203 DATABASE MANAGEMENT SYSTEMS <span>·</span> SVNIT SURAT</footer>
+    </main>
+  </div>
+</body>
+</html>
